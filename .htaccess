@@ -1,0 +1,11 @@
+Options -Indexes
+Options +FollowSymlinks
+RewriteEngine On
+IndexIgnore */*
+
+# path to other site
+RewriteCond %{REQUEST_URI} ^/(trade)
+RewriteRule ^(.*)$ $1 [L]
+
+RewriteRule ^admin/(.*)?$ /advanced/backend/web/$1 [L,PT]
+RewriteRule ^([^/].*)?$ /advanced/frontend/web/$1
