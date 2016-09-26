@@ -39,8 +39,7 @@ AppAsset::register($this);
     </div>
 </footer>
 
-<?php $this->endBody() ?>
-    
+<?php $this->endBody() ?>    
     
 <?php echo $this->render('metrika'); ?>  
     
